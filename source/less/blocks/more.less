@@ -17,7 +17,7 @@
   .more {
     background-image: url("..//img/plus.svg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top 50px center;
     width: 324px;
     border: 2px solid #f2f2f2;
   }
@@ -39,6 +39,12 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .more__title {
+    margin-top: 100px;
+  }
+}
+
 .more__text {
   font-family: "Lato";
   font-weight: 400;
@@ -46,6 +52,12 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .more__text {
+    margin-bottom: 150px;
+  }
 }
 
 .more__button {
@@ -60,4 +72,10 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .more__button {
+    margin-left: 50px;
+  }
 }

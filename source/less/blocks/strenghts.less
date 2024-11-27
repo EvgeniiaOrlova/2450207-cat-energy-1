@@ -1,5 +1,4 @@
 .strenghts {
-  width: 280px;
   margin-bottom: 30px;
 }
 
@@ -39,8 +38,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -50px;
-    left: 60px;
+    left: 0;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
@@ -56,6 +54,7 @@
 @media (min-width: @tablet-width) {
   .strenghts__item {
     margin-bottom: 40px;
+    min-height: 280px;
   }
 }
 
@@ -69,12 +68,12 @@
     color: #f2f2f2;
     font-family: "Oswald";
     bottom: -64px;
-    left: 118px;
+    right: 0;
   }
 }
 
 .strenghts__text {
-  margin-left: 70px;
+  padding-left: 76px;
 
   @media (min-width: @mobile-width-only) {
     br {
@@ -91,6 +90,13 @@
     font-size: 16px;
     line-height: 24px;
     padding-top: 70px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .strenghts__text {
+    padding-top: 70px;
+    padding-left: 10px;
   }
 }
 
@@ -130,7 +136,8 @@
   .strenghts__list {
     display: grid;
     grid-template-columns: 230px 230px;
-    grid-column-gap: 100px;
+    grid-column-gap: 153px;
+    grid-row-gap: 90px;
   }
 }
 
